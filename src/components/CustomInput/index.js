@@ -20,6 +20,7 @@ export const CustomInput = ({
   borderTopLeftRadius,
   borderTopRightRadius,
   borderBottomWidth,
+  borderRadius,
   mode,
   borderTopWidth,
   onFocus = () => {},
@@ -51,6 +52,7 @@ export const CustomInput = ({
             borderTopRightRadius: borderTopRightRadius,
             borderBottomLeftRadius: borderBottomLeftRadius,
             borderBottomRightRadius: borderBottomRightRadius,
+            borderRadius: borderRadius,
             borderBottomWidth: borderBottomWidth,
             borderTopWidth: borderTopWidth,
           })

@@ -8,22 +8,17 @@
 
 import React from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
-import {HomeScreen} from './src/screens/stack/HomeScreen';
+import {HomeSignInScreen} from './src/screens/stack/HomeSignInScreen';
 import AppStyles from './src/styles/AppStyles';
+import StackNavigation from './src/navigation/StackNavigation';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
 
 const App = () => {
   // const s = require('./src/styles/GlobalStyles');
-  return (
-    <SafeAreaView style={AppStyles.container}>
-      <View>
-        <Text style={AppStyles.text}>Archiflo</Text>
-        <HomeScreen />
-      </View>
-    </SafeAreaView>
-  );
+
+  return <StackNavigation />;
 };
 
 export default App;
